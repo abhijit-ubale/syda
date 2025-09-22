@@ -1,10 +1,27 @@
-# Syda Documentation
+---
+title: Syda - AI-Powered Synthetic Test Data Generation | Python Library
+description: Generate realistic synthetic test data with AI - structured, unstructured, PDF, and HTML data generation using OpenAI, Anthropic Claude, and Google Gemini while preserving referential integrity and maintaining privacy compliance.
+keywords:
+  - synthetic data generation
+  - test data generation
+  - AI data generation
+  - large language models
+  - OpenAI GPT
+  - Anthropic Claude
+  - Google Gemini
+  - SQLAlchemy
+  - referential integrity
+  - privacy compliance
+  - structured data
+  - unstructured data
+  - PDF generation
+  - HTML generation
+  - python library
+---
 
-A Python-based open-source library for generating synthetic data with AI while preserving referential integrity. Syda allows seamless use of OpenAI, Anthropic (Claude), and other AI models to create realistic synthetic data.
+# What is Syda?
 
-## What is Syda?
-
-Syda is a powerful library that helps developers and data scientists generate high-quality synthetic data using large language models. Whether you need to create test data for your application, training datasets for machine learning, or mock data that maintains complex relationships between tables, Syda provides an elegant solution.
+Syda seamlessly generate realistic synthetic test data - structured, unstructured, PDF, and HTML data generation with AI and large language models while preserving referential integrity, maintaining privacy compliance, and accelerating development workflows using OpenAI, Anthropic, and Gemini models
 
 ## Key Features
 

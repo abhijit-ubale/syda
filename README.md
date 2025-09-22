@@ -1,20 +1,20 @@
-# 🎯 Syda - AI-Powered Synthetic Data Generation
+# Syda - AI-Powered Synthetic Data Generation
 
 [![PyPI version](https://badge.fury.io/py/syda.svg?v=1)](https://badge.fury.io/py/syda)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/docs-python.syda.ai-brightgreen.svg)](https://python.syda.ai)
 [![GitHub stars](https://img.shields.io/github/stars/syda-ai/syda.svg)](https://github.com/syda-ai/syda/stargazers)
 
 > **Generate high-quality synthetic data with AI while preserving referential integrity**
 
-Syda seamlessly integrates with **Anthropic Claude**, **OpenAI GPT** and **Google Gemini** models to create realistic test data, maintain privacy compliance, and accelerate development workflows.
+Syda seamlessly generate realistic synthetic test data - structured, unstructured, PDF, and HTML data generation with AI and large language models while preserving referential integrity, maintaining privacy compliance, and accelerating development workflows using OpenAI, AzureOpenAI, Anthropic, and Gemini.
 
-## 📚 Documentation
+## Documentation
 
-**📖 For detailed documentation, examples, and API reference, visit: [https://python.syda.ai/](https://python.syda.ai/)**
+**For detailed documentation, examples, and API reference, visit: [https://python.syda.ai/](https://python.syda.ai/)**
 
-## ⚡ 30-Second Quick Start
+## Quick Start
 
 ```bash
 pip install syda
@@ -42,7 +42,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-print("🚀 Starting Syda 30-Second Quick Start...")
+print("🚀 Starting Syda Quick Start...")
 
 # Configure AI model
 generator = SyntheticDataGenerator(
@@ -112,26 +112,26 @@ print("📂 Check the 'data' folder for categories.csv and products.csv")
 ```
 
 
-## 🚀 Why Developers Love Syda
+## Why Developers Love Syda
 
 | Feature | Benefit | Example |
 |---------|---------|---------|
-| 🤖 **Multi-AI Provider** | No vendor lock-in | Claude, GPT, Gemini models |
-| 🔗 **Zero Orphaned Records** | Perfect referential integrity | `product.category_id` → `category.id` ✅ |
-| 🏗️ **SQLAlchemy Native** | Use existing models directly | `Customer`, `Contact` classes → CSV data |
-| 📊 **Multiple Schema Formats** | Flexible input options | SQLAlchemy, YAML, JSON, Dict |
-| 📄 **Document Generation** | AI-powered PDFs linked to data | Product catalogs, receipts, contracts |
-| 🔧 **Custom Generators** | Complex business logic | Tax calculations, pricing rules, arrays |
-| 🛡️ **Privacy-First** | Protect real user data | GDPR/CCPA compliant testing |
-| ⚡ **Developer Experience** | Just works | Type hints, great docs |
+| **Multi-AI Provider** | No vendor lock-in | Claude, GPT, Gemini models |
+| **Zero Orphaned Records** | Perfect referential integrity | `product.category_id` → `category.id` ✅ |
+| **SQLAlchemy Native** | Use existing models directly | `Customer`, `Contact` classes → CSV data |
+| **Multiple Schema Formats** | Flexible input options | SQLAlchemy, YAML, JSON, Dict |
+| **Document Generation** | AI-powered PDFs linked to data | Product catalogs, receipts, contracts |
+| **Custom Generators** | Complex business logic | Tax calculations, pricing rules, arrays |
+| **Privacy-First** | Protect real user data | GDPR/CCPA compliant testing |
+| **Developer Experience** | Just works | Type hints, great docs |
 
 
-## 🛒 Retail Example
+## Retail Example
 
 ### 1. Define your schemas
 
 <details>
-<summary><strong>📋 Click to view schema files</strong> (category_schema.yml & product_schema.yml)</summary>
+<summary><strong>Click to view schema files</strong> (category_schema.yml & product_schema.yml)</summary>
 
 **category_schema.yml:**
 ```yaml
@@ -291,9 +291,9 @@ print("✅ Generated realistic data with perfect foreign key relationships!")
 
 **Output:**
 ```bash
-📂 output/
-├── 📊 categories.csv    # 5 product categories with hierarchical structure
-└── 📊 products.csv      # 20 products, all with valid category_id references
+output/
+├── categories.csv    # 5 product categories with hierarchical structure
+└── products.csv      # 20 products, all with valid category_id references
 ```
 
 ### 3. Want to generate documents too? Add document templates!
@@ -301,7 +301,7 @@ print("✅ Generated realistic data with perfect foreign key relationships!")
 To generate **AI-powered documents** along with your structured data, simply add the product catalog schema and update your code:
 
 <details>
-<summary><strong>📄 Click to view document schema</strong> (product_catalog_schema.yml)</summary>
+<summary><strong>Click to view document schema</strong> (product_catalog_schema.yml)</summary>
 
 **product_catalog_schema.yml (Document Template):**
 ```yaml
@@ -524,10 +524,10 @@ print("✅ Generated structured data + AI-powered product catalogs!")
 
 **Enhanced Output:**
 ```bash
-📂 output/
-├── 📊 categories.csv           # 5 product categories with hierarchical structure
-├── 📊 products.csv             # 20 products, all with valid category_id references  
-└── 📄 product_catalogs/        # 🆕 AI-generated marketing documents
+output/
+├── categories.csv           # 5 product categories with hierarchical structure
+├── products.csv             # 20 products, all with valid category_id references  
+└── product_catalogs/        # AI-generated marketing documents
     ├── catalog_1.pdf           # Product names match products.csv
     ├── catalog_2.pdf           # Prices match products.csv
     ├── catalog_3.pdf           # Perfect data consistency!
@@ -537,7 +537,7 @@ print("✅ Generated structured data + AI-powered product catalogs!")
 
 
 
-## 📊 See It In Action
+## See It In Action
 
 ### **Realistic Retail Data + AI-Generated Product Catalogs**
 
@@ -675,12 +675,12 @@ print("✅ Generated data with custom business logic!")
 > - **Implement complex business rules** (pricing logic, inventory rules)
 > - **Generate structured data** (arrays, nested objects, JSON)
 
-## 🏗️ Works with Your Existing SQLAlchemy Models
+## Works with Your Existing SQLAlchemy Models
 
 Already using **SQLAlchemy**? Syda works directly with your existing models - no schema conversion needed!
 
 <details>
-<summary><strong>🏗️ Click to view SQLAlchemy example</strong></summary>
+<summary><strong>Click to view SQLAlchemy example</strong></summary>
 
 ```python
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, Boolean
@@ -736,35 +736,35 @@ print("✅ Generated CRM data with perfect foreign key relationships!")
 
 **Output:**
 ```bash
-📂 crm_data/
-├── 📊 customers.csv     # 10 companies with realistic industry data
-└── 📊 contacts.csv      # 25 contacts, all with valid customer_id references
+crm_data/
+├── customers.csv     # 10 companies with realistic industry data
+└── contacts.csv      # 25 contacts, all with valid customer_id references
 ```
 
 > 🎯 **Zero Configuration**: Your SQLAlchemy `comments` become AI generation hints, `ForeignKey` relationships are automatically maintained, and `nullable=False` constraints are respected!
 
 
-## 🤝 Contributing
+## Contributing
 
 We would **love your contributions**! Syda is an open-source project that thrives on community involvement.
 
-### 🌟 **Ways to Contribute**
+### Ways to Contribute
 
-- **🐛 Report bugs** - Help us identify and fix issues
-- **💡 Suggest features** - Share your ideas for new capabilities  
-- **📝 Improve docs** - Help make our documentation even better
-- **🔧 Submit code** - Fix bugs, add features, optimize performance
-- **🧪 Add examples** - Show how Syda works in your domain
+- **Report bugs** - Help us identify and fix issues
+- **Suggest features** - Share your ideas for new capabilities  
+- **Improve docs** - Help make our documentation even better
+- **Submit code** - Fix bugs, add features, optimize performance
+- **Add examples** - Show how Syda works in your domain
 - **⭐ Star the repo** - Help others discover Syda
 
-### 📋 **How to Get Started**
+### How to Get Started
 
 1. **Check our [Contributing Guide](CONTRIBUTING.md)** for detailed instructions
 2. **Browse [open issues](https://github.com/syda-ai/syda/issues)** to find something to work on
 3. **Join discussions** in our GitHub Issues and Discussions
 4. **Fork the repo** and submit your first pull request!
 
-### 🎯 **Good First Issues**
+### Good First Issues
 
 Looking for ways to contribute? Check out issues labeled:
 - `good first issue` - Perfect for newcomers
@@ -774,6 +774,5 @@ Looking for ways to contribute? Check out issues labeled:
 
 **Every contribution matters - from fixing typos to adding major features!** 🙏
 
----
 
 **⭐ Star this repo** if Syda helps your workflow • **📖 [Read the docs](https://python.syda.ai)** for detailed guides • **🐛 [Report issues](https://github.com/syda-ai/syda/issues)** to help us improve
